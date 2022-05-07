@@ -1,15 +1,10 @@
-const express = require("express");
+
 const axios = require("axios");
 const cheerio = require("cheerio");
 const pretty = require("pretty");
 const fs = require('fs')
-const app = express();
 
-app.listen(8000, () => console.log("server running on port 8000"));
 
-app.get("/", (req, res) => { 
-    getRecipe()
-})
 const getRecipe = async () => {
   const url = "https://www.jamieoliver.com/recipes/category/course/mains/";
   try {
@@ -51,5 +46,5 @@ const getRecipe = async () => {
   }
 };
 
+getRecipe()
 
-module.exports = app;

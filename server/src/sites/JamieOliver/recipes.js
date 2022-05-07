@@ -1,6 +1,6 @@
 const cheerio = require("cheerio");
 const axios = require("axios");
-const data = require("./recipeLink.json");
+const data = require("../../constants/recipeLink.json");
 
 const getRecipe = async (url) => {
         console.log(url)
@@ -17,8 +17,12 @@ const getRecipe = async (url) => {
 
 var count = 0
 console.log("file: recipes.js ~ line 21 ~ interval ~ data", data.length)
-const interval = setInterval(function(){
+const interval= () => setInterval(function(){
     url = data[count];
     getRecipe(url.recipe_link)
     ++count;
  }, 1000);
+
+
+
+ module.exports = interval
