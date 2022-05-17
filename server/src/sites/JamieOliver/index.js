@@ -1,4 +1,3 @@
-
 const axios = require("axios");
 const cheerio = require("cheerio");
 const pretty = require("pretty");
@@ -26,7 +25,7 @@ const getRecipe = async () => {
       recipe.recipe_link = "https://www.jamieoliver.com" + $(element).find("a").attr("href");
       recipesLink.push(recipe);
     });
-    console.log(recipesLink[0]);
+    console.log(recipesLink);
     
     // write the recipeLink array into recipelink.json file
     fs.writeFile("recipeLink.json", JSON.stringify(recipesLink,null,2), (error)=>{
