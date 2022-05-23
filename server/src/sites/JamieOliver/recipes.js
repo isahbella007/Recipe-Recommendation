@@ -63,7 +63,7 @@ const getRecipe = async (url) => {
 
 var count = 0;
 
-console.log("file: recipes.js ~ line 21 ~ interval ~ data", data.length);
+// console.log("file: recipes.js ~ line 21 ~ interval ~ data", data.length);
 
 const interval = () => {
   setInterval(function () {

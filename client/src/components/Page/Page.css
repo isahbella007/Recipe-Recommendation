@@ -1,0 +1,13 @@
+*{ 
+  margin: 1em;
+}
+input {
+  margin: 0 auto;
+}
+table, td, th{ 
+  border: 1px solid
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}

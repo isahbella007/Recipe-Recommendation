@@ -1,3 +1,4 @@
 const interval = require('./JamieOliver/recipes')
-
-interval()
+const getSeonkyoungRecipes = require('./Asian/Seonkyoung/index')
+// interval()
+getSeonkyoungRecipes()

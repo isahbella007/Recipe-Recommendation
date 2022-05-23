@@ -3,7 +3,6 @@ const env = require('dotenv')
 
 env.config({path: '././.env'})
 
-console.log(process.env.DB_HOST)
 const db_connection = mysql.createConnection({ 
     user: process.env.DB_USER,
     host: process.env.DB_HOST,

@@ -35,10 +35,7 @@ const getRecipe = async () => {
         }
         console.log("Successfully written data to file")
     })
-    // insert into the database like this
-    // for(let i = 0; i<recipes.length; i++){
-    //     console.log(recipes[i].name)
-    // }
+  
   } catch (err) {
     console.log("There is an error");
     console.log(err);
